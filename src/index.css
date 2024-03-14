@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  height: 100vh; /* Make container take up full viewport height */
+}
+
+.box {
+  flex: 1; /* Distribute available space equally among boxes */
+  background-color: lightblue;
+  border: 1px solid blue;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+@media  (max-width: 750px){
+  .box{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+  
+}
+/* @media (max-width: 900px){
+  .box{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+} */
+/* @media (max-width: 1200px){
+  .box{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+} */
